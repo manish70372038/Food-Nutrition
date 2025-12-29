@@ -1,0 +1,78 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary: #8a2be2;
+  --primary-dark: #6a1cb0;
+  --secondary: #00c9b7;
+  --dark-bg: #121212;
+  --dark-card: #1e1e1e;
+  --dark-card-hover: #2a2a2a;
+  --text-light: #f5f5f5;
+  --text-muted: #aaaaaa;
+  --danger: #ff4757;
+  --warning: #ffa502;
+  --success: #2ed573;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title i {
+  color: var(--secondary);
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: white;
+}

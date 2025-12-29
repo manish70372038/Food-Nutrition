@@ -1,0 +1,144 @@
+/* -------- RESET -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* -------- FULL PAGE CONTAINER -------- */
+.reg-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #020617, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------- FULL PAGE CARD -------- */
+.reg-card {
+  width: 100%;
+  height: 100vh;
+  background: #020617;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* -------- LEFT SIDE : FORM -------- */
+.reg-title {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.reg-card form {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* -------- INPUTS -------- */
+.reg-card input {
+  background: #020617;
+  border: 1px solid #334155;
+  padding: 14px 16px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+}
+
+.reg-card input::placeholder {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+}
+
+.reg-card input:focus {
+  border-color: #60a5fa;
+}
+
+/* -------- BUTTON -------- */
+.reg-card button {
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.reg-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.5);
+}
+
+.reg-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* -------- ERRORS -------- */
+.reg-error {
+  color: #fca5a5;
+  font-size: 0.9rem;
+  margin-top: -10px;
+}
+
+/* -------- STATUS MESSAGE -------- */
+.reg-status {
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.reg-status-success {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.reg-status-error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+/* -------- RIGHT SIDE : INFO TEXT -------- */
+.reg-card::before {
+  content: "🍽️ FOOD NUTRITION AI\n\nAnalyze food using Artificial Intelligence.\n\n• Calories detection\n• Protein, Carbs & Fat analysis\n• Smart diet insights\n• Healthy lifestyle support\n\nSimple. Fast. Intelligent.";
+  white-space: pre-line;
+  padding: 100px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #020617, #020617);
+  border-left: 1px solid #1e293b;
+  font-weight: 400;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 900px) {
+  .reg-card {
+    grid-template-columns: 1fr;
+  }
+
+  .reg-card::before {
+    padding: 50px;
+    font-size: 1.1rem;
+    border-left: none;
+    border-top: 1px solid #1e293b;
+  }
+
+  .reg-card form {
+    padding: 50px 30px;
+  }
+}
