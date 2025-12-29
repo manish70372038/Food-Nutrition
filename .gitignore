@@ -1,1 +1,18 @@
-node_modules
+# Ignore node_modules of backend
+backend/node_modules/
+
+# (optional) Ignore client node_modules bhi
+client/node_modules/
+
+# Environment files
+.env
+backend/.env
+client/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
